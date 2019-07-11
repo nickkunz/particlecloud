@@ -16,19 +16,19 @@ import java.io.InputStream;
 import java.io.OutputStream; 
 import java.io.IOException; 
 
-public class cloud_custom extends PApplet {
+public class particle_cloud extends PApplet {
 
-// title: custom cloud
+// title: custom traer physics cloud
 // author: jeffrey traer bernstein
 // modified: nick kunz
 // date: july 11, 2019
-// description: an experiment modifying the attraction behavoir of 
-//              the cloud example found in the traer physics library
+// description: a quick experiment modifying the attraction behavoir of the
+//              cloud example found in the traer physics library for processing
 
 // load library
 
 
-// define variables
+// define variables 
 Particle mouse;
 Particle[] particles;
 ParticleSystem physics;
@@ -36,11 +36,11 @@ PImage img;
 
 public void setup()
 {
-   // app window size
+   // window size
   frameRate(60);  // fast frame rate
-  noCursor();     // remove cursor from app window
+  noCursor();     // remove cursor from window
 
-  tint(0, 0, 0);                // cloud color
+  tint(0, 0, 0);                // cloud color (black)
   img = loadImage("fade.png");  // particle fade
   
   particles = new Particle[1000];        // number of particles
@@ -59,7 +59,7 @@ public void draw()
 {
   
   physics.tick();
-  background(255, 255, 255);                 // background color
+  background(255, 255, 255);                 // background color (white)
   mouse.position().set( mouseX, mouseY, 0);  // cursor control
   
   // initialize particle positions
@@ -70,7 +70,7 @@ public void draw()
 }
   public void settings() {  size(920, 720); }
   static public void main(String[] passedArgs) {
-    String[] appletArgs = new String[] { "cloud_custom" };
+    String[] appletArgs = new String[] { "particle_cloud" };
     if (passedArgs != null) {
       PApplet.main(concat(appletArgs, passedArgs));
     } else {

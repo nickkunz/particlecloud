@@ -1,14 +1,14 @@
-// title: custom cloud
+// title: custom traer physics cloud
 // author: jeffrey traer bernstein
 // modified: nick kunz
 // date: july 11, 2019
-// description: an experiment modifying the attraction behavoir of 
-//              the cloud example found in the traer physics library
+// description: a quick experiment modifying the attraction behavoir of the
+//              cloud example found in the traer physics library for processing
 
 // load library
 import traer.physics.*;
 
-// define variables
+// define variables 
 Particle mouse;
 Particle[] particles;
 ParticleSystem physics;
@@ -16,11 +16,11 @@ PImage img;
 
 void setup()
 {
-  size(920, 720); // app window size
+  size(920, 720); // window size
   frameRate(60);  // fast frame rate
-  noCursor();     // remove cursor from app window
+  noCursor();     // remove cursor from window
 
-  tint(0, 0, 0);                // cloud color
+  tint(0, 0, 0);                // cloud color (black)
   img = loadImage("fade.png");  // particle fade
   
   particles = new Particle[1000];        // number of particles
@@ -39,7 +39,7 @@ void draw()
 {
   
   physics.tick();
-  background(255, 255, 255);                 // background color
+  background(255, 255, 255);                 // background color (white)
   mouse.position().set( mouseX, mouseY, 0);  // cursor control
   
   // initialize particle positions
