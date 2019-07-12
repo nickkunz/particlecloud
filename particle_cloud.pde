@@ -2,7 +2,7 @@
 // author: jeffrey traer bernstein
 // modified: nick kunz
 // date: july 11, 2019
-// description: a quick experiment modifying the attraction behavoir of the
+// description: a quick experiment modifying the attraction behavior of the
 //              cloud example found in the traer physics library for processing
 
 // load library
