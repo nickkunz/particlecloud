@@ -1,4 +1,4 @@
-# Interactive Visualization Experiment
+# Interactive Particle Simulator Visualization
 
 ![preview](https://github.com/nickkunz/particlecloud/blob/master/media/custom_particle_cloud_sim.gif)
 
